@@ -1,0 +1,33 @@
+# ===== Dependencies =====
+node_modules/
+server/node_modules/
+
+# ===== Environment variables =====
+.env
+server/.env
+
+# ===== Logs =====
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# ===== Build output =====
+dist/
+build/
+
+# ===== Cache =====
+.cache/
+.eslintcache
+
+# ===== OS files =====
+.DS_Store
+Thumbs.db
+
+# ===== IDE settings =====
+.vscode/
+.idea/
+
+# ===== Uploads (if using cloud storage like Cloudinary) =====
+uploads/
