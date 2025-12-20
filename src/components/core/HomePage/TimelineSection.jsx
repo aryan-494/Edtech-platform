@@ -82,7 +82,7 @@ const TimelineSection = () => {
         </div>
       </div>
     </div>
-  );
+  ); 
 };
 
 export default TimelineSection;
