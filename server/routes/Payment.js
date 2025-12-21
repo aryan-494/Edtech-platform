@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
 
-const { capturePayment, verifySignature } = require("../controllers/Payments");
+const { capturePayment, verifyPayment } = require("../controllers/Payments");
 const { auth, isStudent } = require("../middlewares/auth");
 
 
@@ -13,7 +13,7 @@ const { auth, isStudent } = require("../middlewares/auth");
 router.post("/capturePayment", auth, isStudent, capturePayment);
 
 // Verify payment signature (Razorpay webhook)
-router.post("/verifyPayment", auth, isStudent, verifySignature);
+router.post("/verifyPayment", auth, isStudent, verifyPayment);
 
 
 module.exports = router;
