@@ -3,6 +3,8 @@ import{Route , Routes} from "react-router-dom";
 import Home from "./pages/Home"
 import Navbar from "./components/common/Navbar"
 import CourseDetails from "./pages/CourseDetails";
+import OpenRoute from "./components/core/Auth/OpenRoute";
+import Signup from "./pages/Signup"
 
 function App() {
   return (
@@ -11,7 +13,22 @@ function App() {
     <Routes>
       <Route path="/" element={<Home/>}/>
       <Route path="course/courseId" element={<CourseDetails/>}/>
+
+      <Route
+          path="signup"
+          element={
+            <OpenRoute>
+              <Signup />
+            </OpenRoute>
+          }
+        />
+    <Route/>
+
+
+
+
     </Routes>
+    
 
     </div>
   );
