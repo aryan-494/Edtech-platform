@@ -5,6 +5,7 @@ import Navbar from "./components/common/Navbar"
 import CourseDetails from "./pages/CourseDetails";
 import OpenRoute from "./components/core/Auth/OpenRoute";
 import Signup from "./pages/Signup"
+import Login from "./pages/Login";
 
 function App() {
   return (
@@ -12,10 +13,10 @@ function App() {
     <Navbar/>
     <Routes>
       <Route path="/" element={<Home/>}/>
-      <Route path="course/courseId" element={<CourseDetails/>}/>
+      <Route path="/course/courseId" element={<CourseDetails/>}/>
 
       <Route
-          path="signup"
+          path="/signup"
           element={
             <OpenRoute>
               <Signup />
@@ -23,6 +24,11 @@ function App() {
           }
         />
     <Route/>
+    <Route 
+    path="/login"
+    element={<OpenRoute><Login/></OpenRoute>}>
+      
+    </Route>
 
 
 

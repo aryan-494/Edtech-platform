@@ -1,5 +1,5 @@
-/* import signupImg from "../assets/Images/signup.webp"
-//import Template from "../components/core/Auth/Template"
+import signupImg from "../assets/Images/signup.webp"
+import Template from "../components/core/Auth/Template"
 
 function Signup() {
   return (
@@ -13,4 +13,4 @@ function Signup() {
   )
 }
 
-export default Signup; */
+export default Signup; 

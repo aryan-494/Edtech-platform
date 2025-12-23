@@ -1,3 +1,7 @@
+/* apiConnector is a messenger.
+You tell it HOW, WHERE, and WHAT — it delivers the request. */
+
+
 import axios from "axios"
 
 export const axiosInstance = axios.create({});
