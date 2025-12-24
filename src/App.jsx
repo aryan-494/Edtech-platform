@@ -6,6 +6,7 @@ import CourseDetails from "./pages/CourseDetails";
 import OpenRoute from "./components/core/Auth/OpenRoute";
 import Signup from "./pages/Signup"
 import Login from "./pages/Login";
+import VerifyEmail from "./pages/VerifyEmail";
 
 function App() {
   return (
@@ -24,11 +25,25 @@ function App() {
           }
         />
     <Route/>
+
+
     <Route 
-    path="/login"
-    element={<OpenRoute><Login/></OpenRoute>}>
+         path="/login"
+         element={
+           <OpenRoute>
+             <Login/>
+           </OpenRoute>}>
       
     </Route>
+      <Route
+          path="verify-email"
+          element={
+            <OpenRoute>
+              <VerifyEmail />
+            </OpenRoute>
+          }
+        />  
+
 
 
 

@@ -1,3 +1,11 @@
+/* Signup Page
+ ├─ user enters email
+ ├─ backend sends OTP
+ ├─ signupData saved in Redux
+ └─ navigate to VerifyEmail */
+
+
+
 import signupImg from "../assets/Images/signup.webp"
 import Template from "../components/core/Auth/Template"
 
