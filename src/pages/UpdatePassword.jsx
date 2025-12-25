@@ -9,9 +9,12 @@ User sets new password
  → redirect to login */
 
 import { useState } from "react";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import {  useLocation, useNavigate } from "react-router-dom";
 import { resetPassword } from "../services/operations/authAPI";
+import { AiOutlineEye, AiOutlineEyeInvisible } from "react-icons/ai"
+import { BiArrowBack } from "react-icons/bi"
+import { Link } from "react-router-dom";
 
 
 function UpdatePassword(){
@@ -20,7 +23,8 @@ function UpdatePassword(){
     const navigate= useNavigate();
     const dispatch = useDispatch();
     const location = useLocation();
-    const {formData , setFormData}= useState({
+    const {loading}=useSelector((state)=>state.auth);
+    const [formData , setFormData]= useState({
         password:"",confirmPassword:""
     })
 
@@ -41,7 +45,7 @@ function UpdatePassword(){
     // the token in in path and that should be read from back side when "/" appear
 
     const token= location.pathname.split("/").at(-1);
-    dispatch(resetPassword(password,confirmPassword,navigate , token))
+    dispatch(resetPassword(password,confirmPassword, navigate , token))
 
 
     }
