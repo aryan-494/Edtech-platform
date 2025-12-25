@@ -15,6 +15,7 @@ function SignupForm() {
 
   // student or instructor
   const [accountType, setAccountType] = useState(ACCOUNT_TYPE.STUDENT)
+  const[contactNumber, setContactNumber]=useState("")
 
   const [formData, setFormData] = useState({
     firstName: "",
@@ -22,6 +23,7 @@ function SignupForm() {
     email: "",
     password: "",
     confirmPassword: "",
+    
   })
 
   const [showPassword, setShowPassword] = useState(false)
@@ -47,6 +49,7 @@ function SignupForm() {
     }
     const signupData = {
       ...formData,
+      contactNumber,
       accountType,
     }
 
@@ -123,6 +126,21 @@ function SignupForm() {
             />
           </label>
         </div>
+        <label className="w-full">
+  <p className="mb-1 text-[0.875rem] leading-[1.375rem] text-richblack-5">
+    Contact Number <sup className="text-pink-200">*</sup>
+  </p>
+  <input
+    required
+    type="text"
+    name="contactNumber"
+    value={contactNumber}
+    onChange={(e) => setContactNumber(e.target.value)}
+    placeholder="Enter contact number"
+    className="w-full rounded-[0.5rem] bg-richblack-800 p-[12px] text-richblack-5"
+  />
+</label>
+
         <label className="w-full">
           <p className="mb-1 text-[0.875rem] leading-[1.375rem] text-richblack-5">
             Email Address <sup className="text-pink-200">*</sup>

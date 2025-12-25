@@ -13,14 +13,14 @@ import OtpInput from "react-otp-input"
 import { Link } from "react-router-dom";
 import { BiArrowBack } from "react-icons/bi";
 import { RxCountdownTimer } from "react-icons/rx";
-import { useDispatch, useSelector } from "react-redux"
-import { sendOtp, signUp } from "../services/operations/authAPI";
+
+import { sendOtp , signUp } from "../services/operations/authAPI";
 
 
  function VerifyEmail(){
 
     // first user typed otp in local state 
-    const [otp, sendotp] = useState("");
+    const [otp, setOtp] = useState("");
     // things i need in another pages too
     const{signupData, loading}=useSelector((state)=>(state.auth));
     const dispatch = useDispatch();
@@ -31,7 +31,8 @@ import { sendOtp, signUp } from "../services/operations/authAPI";
         if(!signupData){
             navigate("/signup");
         }
-        // eslint-disable-next-line react-hooks/exhaustive-deps -> run one time only 
+       // eslint-disable-next-line react-hooks/exhaustive-deps
+
     },[])
 
    const handleVerifyAndSignup = (e)=>{
@@ -43,6 +44,7 @@ import { sendOtp, signUp } from "../services/operations/authAPI";
       email,
       password,
       confirmPassword,
+      contactNumber,
      }=signupData;
 
      dispatch(
@@ -53,6 +55,7 @@ import { sendOtp, signUp } from "../services/operations/authAPI";
       email,
       password,
       confirmPassword,
+      contactNumber,
       otp,
       navigate
 

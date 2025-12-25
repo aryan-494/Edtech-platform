@@ -64,6 +64,7 @@ export function signUp(
   email,
   password,
   confirmPassword,
+  contactNumber,
   otp,
   navigate
 ) {
@@ -77,6 +78,7 @@ export function signUp(
         lastName,
         email,
         password,
+        contactNumber,
         confirmPassword,
         otp,
       })
@@ -89,10 +91,10 @@ export function signUp(
       toast.success("Signup Successful")
       navigate("/login")
     } catch (error) {
-      console.log("SIGNUP API ERROR............", error)
-      toast.error("Signup Failed")
-      navigate("/signup")
-    }
+  console.log("SIGNUP API ERROR:", error.response?.data || error)
+  toast.error(error.response?.data?.message || "Signup Failed")
+}
+
     dispatch(setLoading(false))
     toast.dismiss(toastId)
   }

@@ -7,12 +7,13 @@
 // with token we'll send them to updateapssword page 
 
 import { useState } from "react";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { getPasswordResetToken } from "../services/operations/authAPI";
 import { Link } from "react-router-dom";
+import { BiArrowBack } from "react-icons/bi"
 
 
-function forgotPassword(){
+function ForgotPassword(){
     const [email , setEmail] = useState("");
     const [emailSent , setEmailSent] = useState("");
     const dispatch = useDispatch();
@@ -82,6 +83,7 @@ function forgotPassword(){
 
 
 }
+export default ForgotPassword;
 
 
 
