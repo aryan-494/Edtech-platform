@@ -15,3 +15,11 @@ export const endpoints = {
 export const categories = {
   CATEGORIES_API: BASE_URL + "/course/showAllCategories",
 }
+
+
+export const profileEndpoints ={
+  GET_USER_DETAILS_API:BASE_URL+"/profile/getUserDetails",
+  GET_USER_ENROLLED_COURSES_API:BASE_URL+"/profile/getEnrolledCourses",
+  GET_INSTRUCTOR_DATA_API:BASE_URL+"/profile/instructorDashboard"
+
+}
