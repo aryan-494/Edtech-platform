@@ -9,6 +9,8 @@ import Login from "./pages/Login";
 import VerifyEmail from "./pages/VerifyEmail";
 import ForgotPassword from "./pages/ForgotPassword"
 import UpdatePassword from "./pages/UpdatePassword";
+import Dashboard from "./pages/Dashboard";
+import PrivateRoute from "./components/core/Auth/PrivateRoute";
 
 function App() {
   return (
@@ -66,6 +68,16 @@ function App() {
             </OpenRoute>
           }
         />  
+
+
+        <Route
+         element={
+        <PrivateRoute>
+          <Dashboard />
+        </PrivateRoute>
+      }>
+
+        </Route>
 
 
 
