@@ -1,4 +1,4 @@
-export default function IconBtn({
+ function IconBtn({
     text,
     onclick,
     children,
@@ -27,3 +27,4 @@ export default function IconBtn({
       </button>
     )
   }
+  export default IconBtn;
