@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
 import {getInstructorData} from "../../../../services/operations/profileAPI";
 import { fetchInstructorCourses } from "../../../../services/operations/courseDetailsAPI";
+import InstructorChart from "./InstructorChart"
 
 
 
