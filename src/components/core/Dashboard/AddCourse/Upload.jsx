@@ -1,6 +1,8 @@
 import { useEffect } from "react";
 import { useDropzone } from "react-dropzone";
 import { useSelector, useRef,useState } from "react-redux";
+import { FiUploadCloud } from "react-icons/fi";
+import { Player } from "@livepeer/react";
 
 
 export default function Upload ({
