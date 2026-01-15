@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@livepeer/react": "^4.3.6",
     "@ramonak/react-progress-bar": "^5.4.0",
     "@reduxjs/toolkit": "^2.11.2",
     "axios": "^1.13.2",
