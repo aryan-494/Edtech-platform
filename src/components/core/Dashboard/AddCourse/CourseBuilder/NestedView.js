@@ -10,7 +10,7 @@ import {
   deleteSection,
   deleteSubSection,
 } from "../../../../../services/operations/courseDetailsAPI"
-import { setCourse } from "../../../../../slices/courseSlice"
+import {setCourse} from "../../../../../slices/courseSlice"
 import ConfirmationModal from "../../../../common/ConfirmationModal"
 import SubSectionModal from "./SubSectionModal"
 
