@@ -1,59 +1,71 @@
-EdTech Platform (MERN Stack)
+🎓 EdTech Platform (MERN Stack)
 
-A full-stack EdTech web application built using the MERN stack, designed to deliver scalable online learning experiences.
-The project focuses on clean architecture, real-world backend practices, and a modern, responsive frontend.
+A full-stack EdTech web application built with the MERN stack, designed to provide a scalable, secure, and user-friendly online learning experience.
+
+This project is being developed with a real-world architecture mindset, focusing on clean code, modular structure, and production-style backend practices.
 
 🚧 Status: Actively under development
+New features and improvements are added continuously.
 
 🚀 Tech Stack
-
 Frontend
 
-React.js
+React.js – component-based UI
 
-Tailwind CSS
+Tailwind CSS – modern, responsive styling
 
 JavaScript (ES6+)
 
 Backend
 
-Node.js
+Node.js – runtime
 
-Express.js
+Express.js – REST API framework
 
-MongoDB (Mongoose)
+MongoDB + Mongoose – database & schema modeling
 
-Other Tools
+Other Tools & Services
 
-JWT Authentication
+JWT Authentication – secure login & sessions
 
-Cloudinary (media handling)
+Cloudinary – image & video storage
 
-Git & GitHub
+Git & GitHub – version control & collaboration
 
 📂 Project Structure
-/src        → React frontend
-/public    → Static assets
+/src       → React frontend  
+/public    → Static assets  
 /server    → Backend (Express + MongoDB)
 
 
-The backend and frontend are maintained in a single repository for easier development and version control.
+Both frontend and backend live in the same repository for smoother development and version tracking.
 
-✨ Key Features (Current & Planned)
+✨ Key Features
+Current
 
-User authentication (JWT-based)
+🔐 JWT-based user authentication
 
-Role-based access (Student / Instructor)
+👥 Role-based access (Student / Instructor)
 
-Course creation and management
+📚 Course creation & management
 
-Media uploads (videos, images)
+🖼️ Media uploads (images & videos via Cloudinary)
 
-Responsive UI for all devices
+📱 Fully responsive UI
 
-Secure backend APIs
+🔒 Secure REST APIs
 
-More features will be added as development progresses.
+Planned
+
+Progress tracking
+
+Course reviews & ratings
+
+Instructor dashboards
+
+Payment integration
+
+Admin panel
 
 ⚙️ Setup Instructions
 1️⃣ Clone the repository
@@ -67,37 +79,37 @@ npm install
 cd server
 npm install
 
-4️⃣ Environment variables
+4️⃣ Environment Variables
 
-Create a .env file inside the server folder and add:
+Create a .env file inside the server folder:
 
-MONGODB_URL=your_database_url
-JWT_SECRET=your_secret_key
-CLOUDINARY_API_KEY=your_key
+MONGODB_URL=your_database_url  
+JWT_SECRET=your_secret_key  
+CLOUDINARY_API_KEY=your_key  
+CLOUDINARY_API_SECRET=your_secret  
+CLOUDINARY_CLOUD_NAME=your_cloud_name
 
 5️⃣ Run the project
-
 Backend
-
 cd server
 npm run dev
 
-
 Frontend
-
 npm start
 
 📌 Development Approach
 
 Feature-based commits
 
-Clean folder separation
+Modular folder structure
+
+RESTful API design
+
+Clean and readable code
 
 Regular GitHub updates
 
-Focus on readability and maintainability
-
-This project is being built incrementally with real-world development practices in mind.
+This project is being built incrementally, following industry-style development practices.
 
 📸 Screenshots
 
@@ -113,6 +125,11 @@ Feel free to open an issue or submit a pull request.
 Aryan Mishra
 B.Tech (Electrical Engineering)
 Full-Stack Developer (MERN)
-Actively exploring backend systems, scalable architectures, and open-source contributions.
 
-⭐ If you find this project interesting, consider starring the repository.
+Actively exploring:
+
+Backend systems
+
+Scalable architectures
+
+Open-source development
