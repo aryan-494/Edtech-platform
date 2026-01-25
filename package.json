@@ -20,6 +20,7 @@
     "react-super-responsive-table": "^6.0.2",
     "react-type-animation": "^3.2.0",
     "start": "^5.1.0",
+    "swiper": "^12.0.3",
     "web-vitals": "^2.1.4"
   },
   "repository": {
