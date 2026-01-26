@@ -13,7 +13,6 @@ import OtpInput from "react-otp-input"
 import { Link } from "react-router-dom";
 import { BiArrowBack } from "react-icons/bi";
 import { RxCountdownTimer } from "react-icons/rx";
-
 import { sendOtp , signUp } from "../services/operations/authAPI";
 
 
