@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom";
 import { fetchCourseDetails } from "../../../services/operations/courseDetailsAPI";
 import IconBtn from "../../common/IconBtn"
 import { VscAdd } from "react-icons/vsc"
-import {CoursesTable} from "../InstructorCourses/CoursesTable"
+import {CoursesTable} from "../Dashboard/InstructorCourses/CoursesTable"
 
 /* Flow ->
 Get instructor’s auth token
